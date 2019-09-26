@@ -21,9 +21,9 @@ public class ItemController {
 		return itemService.findAll();
 	}
 	
-	@GetMapping("/ver/{id}")
-	public Item ver(@PathVariable Long id) {
-		return itemService.findById(id);
+	@GetMapping("/ver/{id}/cantidad/{cantidad}")
+	public Item ver(@PathVariable Long id, @PathVariable Integer cantidad) {
+		return itemService.findById(id, cantidad);
 	}
 	
 }
