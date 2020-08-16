@@ -18,7 +18,7 @@ import javax.persistence.Transient;
 public class Producto implements Serializable {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String nombre;
 	private double precio;
